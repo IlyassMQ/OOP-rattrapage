@@ -103,7 +103,7 @@ class Location implements Payable {
         $somme = 0 ;
 
         foreach ($this->vehicules as $v) {
-            $somme =+ $v->$this->getTotal();
+            $somme =+ $v->$this->getPtix();
             
         }
         return $somme;
